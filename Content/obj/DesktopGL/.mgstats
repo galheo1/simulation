@@ -1,0 +1,7 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"/home/theo/simulation/simulation/Content/assets/feed.png","/home/theo/simulation/simulation/Content/bin/DesktopGL/assets/feed.xnb","TextureProcessor","Texture2DContent",726,985,0,1311692
+"/home/theo/simulation/simulation/Content/assets/minion.png","/home/theo/simulation/simulation/Content/bin/DesktopGL/assets/minion.xnb","TextureProcessor","Texture2DContent",5392,250085,0,017639
+"/home/theo/simulation/simulation/Content/assets/quit.png","/home/theo/simulation/simulation/Content/bin/DesktopGL/assets/exit.xnb","TextureProcessor","Texture2DContent",2249,30085,0,0032153
+"/home/theo/simulation/simulation/Content/assets/rect.png","/home/theo/simulation/simulation/Content/bin/DesktopGL/assets/rect.xnb","TextureProcessor","Texture2DContent",547,89,0,0007548
+"/home/theo/simulation/simulation/Content/font/fontss.spritefont","/home/theo/simulation/simulation/Content/bin/DesktopGL/font/fontss.xnb","FontDescriptionProcessor","SpriteFontContent",2011,70681,0,0996874
+"/home/theo/simulation/simulation/Content/font/Weghorst.spritefont","/home/theo/simulation/simulation/Content/bin/DesktopGL/font/Weghorst.xnb","FontDescriptionProcessor","SpriteFontContent",2011,136217,0,045006

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>/home/theo/simulation/simulation/Content/assets/feed.png</File>
+    <File>/home/theo/simulation/simulation/Content/assets/minion.png</File>
+    <File>/home/theo/simulation/simulation/Content/assets/quit.png</File>
+    <File>/home/theo/simulation/simulation/Content/assets/rect.png</File>
+    <File>/home/theo/simulation/simulation/Content/font/fontss.spritefont</File>
+    <File>/home/theo/simulation/simulation/Content/font/Weghorst.spritefont</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File>assets/exit.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
