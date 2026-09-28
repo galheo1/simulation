@@ -30,8 +30,9 @@ public class Individu : Update
 
     public void Initialize(int windowWidth, int windowHeight)
     {
-        estomact = estomactMax;
-        endurance = (velocity*5+size)/25;
+        
+        estomact = estomactMax;//diminue à force de se déplacer, augmente en mangeant
+        endurance = (velocity*5+size)/25;//plus la vélocitée et la taille sont grandes, plus la barre de faim diminue vite
         //endurance = (velocity*25)/50;
         //Console.WriteLine(endurance);
         live = true;

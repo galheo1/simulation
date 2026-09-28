@@ -14,6 +14,7 @@ public class Butons : Menu
     public Vector2 Position;
     public Vector2 Scale;
     public Color color;
+    public Color fontColor;
     private bool pressed = true;
     public void Initialize(int windowWidth, int windowHeight)
     {
@@ -70,6 +71,6 @@ public class Butons : Menu
 
         spriteBatch.DrawString(font, text,
         new Vector2(Position.X- font.MeasureString(text).X/2,Position.Y-font.MeasureString(text).Y/2),
-        Color.Black);
+        fontColor);
     }
 }

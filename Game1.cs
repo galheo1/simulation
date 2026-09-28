@@ -94,10 +94,10 @@ public class Game1 : Core
         }
         else if (_updateManager.UpdateAll(gameTime,Content, Window))
         {
-            foreach(Historic i in _updateManager.historic)
+            foreach(Historic i in _updateManager.historic) // affichage dans le console le nombre de survivants et de morts pour chaques générations
             {
                 Console.WriteLine(i.day);
-                Console.WriteLine(i.nbrSurvivors+" "+i.nbrDied);
+                Console.WriteLine("Survivors: " + i.nbrSurvivors + " Died: " + i.nbrDied);
             }
             menu = true;
         }

@@ -46,15 +46,13 @@ public class Menu
                 Position = new Vector2(Window.ClientBounds.Width/2, Window.ClientBounds.Height/2-100),
                 Scale = new Vector2(250, 100),
                 text = "start",
-                color = Color.Orange
+                color = Color.Orange,
+                fontColor = Color.Black
         };
-        butonMenu.Initialize(Window.ClientBounds.Width, Window.ClientBounds.Height);
 
 
 
         (butonLapPlus, butonLapMoins) = PlusMoinsButton(Content, Window, 0, 0);
-        butonLapPlus.Initialize(Window.ClientBounds.Width, Window.ClientBounds.Height);
-        butonLapMoins.Initialize(Window.ClientBounds.Width, Window.ClientBounds.Height);
 
         lapSet = Content.Load<Texture2D>("assets/rect");
         lapSetPosition = new Vector2(Window.ClientBounds.Width/2, Window.ClientBounds.Height/2);
@@ -85,7 +83,8 @@ public class Menu
                 Position = new Vector2(Window.ClientBounds.Width/2-125+x, Window.ClientBounds.Height/2+y),
                 Scale = new Vector2(50, 50),
                 text = "+",
-                color = Color.Orange
+                color = Color.Orange,
+                fontColor = Color.Black
         };
         Butons M = new Butons
         {
@@ -94,7 +93,8 @@ public class Menu
                 Position = new Vector2(Window.ClientBounds.Width/2+125+x, Window.ClientBounds.Height/2+y),
                 Scale = new Vector2(50, 50),
                 text = "-",
-                color = Color.Orange
+                color = Color.Orange,
+                fontColor = Color.Black
         };
 
         return (P, M);

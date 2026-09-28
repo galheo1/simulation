@@ -8,12 +8,16 @@ using System.Linq.Expressions;
 using System;
 using System.Timers;
 
+using Microsoft.VisualBasic;
 namespace simulation;
 
 
 
 public class Update
 {
+    private Butons pauseButton;
+
+
     private List<Individu> _individus = new List<Individu>();
     private List<Individu> _dead = new List<Individu>();
     public int reloadFeed;
@@ -40,7 +44,16 @@ public class Update
         content = Content;
         window = Window;
         addfood = true;
-        
+        pauseButton =new Butons
+        {
+                butonTexture = Content.Load<Texture2D>("assets/rect"),
+                font =  Content.Load<SpriteFont>("font/fontss"),
+                Position = new Vector2(Window.ClientBounds.Width-75, 100),
+                Scale = new Vector2(150, 100),
+                text = "Menu",
+                color = Color.Transparent,
+                fontColor = Color.White
+        };
 
         for (int i=0; i<200; i++){
             var food = new Food
@@ -91,7 +104,7 @@ public class Update
     {
         if (addfood)
         {
-            Console.WriteLine(reloadFeed);
+            //Console.WriteLine(reloadFeed);
             for(int i =0; i<reloadFeed; i++){
             addFood(Content, Window);
             }
@@ -123,6 +136,13 @@ public class Update
         if(lap>lapMax)
         {
             return true;
+        }
+        else if (pauseButton.onPressed(gameTime))
+        {
+            return true;
+        }
+        {
+            return false;
         }
         return false;
     }
@@ -253,7 +273,7 @@ public class Update
                 individu.Initialize(window.ClientBounds.Width, window.ClientBounds.Height);
                 //Console.WriteLine("holla");
                 oldGen.Add(individu);
-                Console.WriteLine(individu.velocity+" "+mini+" "+maxi);
+                //Console.WriteLine(individu.velocity+" "+mini+" "+maxi);
             }
         }
         
@@ -300,6 +320,7 @@ public class Update
             }
         spriteBatch.DrawString(font, lap.ToString()+"/"+lapMax.ToString(), new Vector2(50, 50), Color.White);
         spriteBatch.DrawString(font, countdown.ToString()+"s", new Vector2(50, 150), Color.White);
+        pauseButton.Draw(spriteBatch);
         
     }
 }
